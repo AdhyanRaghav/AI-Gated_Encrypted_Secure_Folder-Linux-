@@ -26,7 +26,7 @@ def inactivity_monitor():
     while True:
         time.sleep(10)
 
-        if time.time() - start>10:
+        if time.time() - start>120:
             if not is_folder_in_use():
                 os.system(f"fusermount -u {Mount_Path}")
                 break
