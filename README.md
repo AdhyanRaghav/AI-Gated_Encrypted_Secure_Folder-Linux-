@@ -1,4 +1,4 @@
-# 🔐 AI-Gated Encrypted Secure Folder (Linux)
+# AI-Gated Encrypted Secure Folder (Linux)
 
 A face-recognition based encrypted folder access system built using OpenCV and gocryptfs on Linux.
 
@@ -14,7 +14,7 @@ Only after successful face authentication does the encrypted folder mount and op
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 face_detection_system/
@@ -26,7 +26,7 @@ face_detection_system/
 
 ---
 
-## 🧠 How It Works
+## How It Works
 
 1. User clicks the Secure Folder launcher.
 2. `auth.py` runs face authentication for 3 seconds.
@@ -43,7 +43,7 @@ Encryption is handled using `gocryptfs`, so files remain unreadable unless mount
 
 ---
 
-## 🔧 Requirements
+## Requirements
 
 ### System Packages
 
@@ -73,7 +73,7 @@ pip install opencv-contrib-python numpy
 
 ---
 
-## 🔐 Setting Up Encrypted Storage
+## Setting Up Encrypted Storage
 
 Create encrypted storage:
 
@@ -93,7 +93,7 @@ chmod 600 ~/.secret_key
 
 ---
 
-## 🎯 Training Your Face Model
+## Training Your Face Model
 
 Run:
 
@@ -108,7 +108,7 @@ This:
 
 ---
 
-## 🚀 Running Authentication
+## Running Authentication
 
 ```bash
 /home/your_username/face_detection_system/.venv/bin/python auth.py
@@ -118,7 +118,7 @@ Or create a `.desktop` launcher pointing to your virtual environment Python.
 
 ---
 
-## 🔄 Inactivity Auto-Unmount
+## Inactivity Auto-Unmount
 
 After mounting, a background thread:
 
@@ -132,7 +132,7 @@ fusermount -u ~/SecureMount
 
 ---
 
-## ⚠️ Security Notes
+## Security Notes
 
 - The encryption key file (`~/.secret_key`) must be protected.
 - This system is intended for personal use on Linux.
@@ -140,7 +140,7 @@ fusermount -u ~/SecureMount
 
 ---
 
-## 🖥️ Tested On
+## Tested On
 
 - Zorin OS (GNOME-based)
 - Python 3.10
@@ -148,7 +148,7 @@ fusermount -u ~/SecureMount
 
 ---
 
-## 📌 Future Improvements
+## Future Improvements
 
 - Multi-user support
 - Retry attempts
@@ -159,13 +159,13 @@ fusermount -u ~/SecureMount
 
 ---
 
-## 📜 License
+## License
 
 MIT License
 
 ---
 
-## 👤 Author
+## Author
 
 Adhyan Raghav  
 Cybersecurity & Systems Enthusiast
